@@ -7,20 +7,20 @@ It requires the user to input the industry in which they would like startup idea
 ### Installation 🛠️
 Make sure that you an OpenAI key setup.
 
- - Clone the repository
+ 1. Clone the repository
 ```bash
 git clone https://github.com/2020Priyanshu/StartupGPT.git
 ```
- - Create a Virtual environment
+ 2. Create a Virtual environment
 ```bash
 python -m venv gpt
 ```
- - Install the dependencies
+ 3. Install the dependencies
 ```bash
 pip install -r requirements.txt
 ```
- - Add your OpenAI API Key apikeys.py
- - Run the streamlit app
+ 4. Add your OpenAI API Key apikeys.py
+ 5. Run the streamlit app
 ```bash
 streamlit run app.py
 ```
