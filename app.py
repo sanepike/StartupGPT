@@ -13,7 +13,9 @@ st.title("Startup GPT 🚀")
 text = st.text_input("Write the industry for your startup")
 
 #Setup openai
-os.environ["OPENAI_API_KEY"] = Platform.environment['API_KEY']
+#Uncomment the following statement if running with your openai api key
+#os.environ["OPENAI_API_KEY"] = openai_api_key
+os.environ["OPENAI_API_KEY"] = os.getenv("openai_api_key")
 
 #setup llm
 llm = OpenAI()
