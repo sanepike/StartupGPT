@@ -21,8 +21,12 @@ python -m venv gpt
 ```bash
 pip install -r requirements.txt
 ```
- 4. Add your OpenAI API Key apikeys.py
- 5. Run the streamlit app
+ 4. Create a .env file in the directory
+ 5. Add your OpenAI API key in the env file as a key value pair
+```bash
+openai_api_key = "Your OpenAI API Key"
+```
+ 7. Run the streamlit app
 ```bash
 streamlit run app.py
 ```
