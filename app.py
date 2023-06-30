@@ -3,7 +3,9 @@ import streamlit as st
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-from apikeys import openai_api_key
+
+#Uncomment the following statement if running with your openai api key
+#from apikeys import openai_api_key
 import os
 
 # A Simple UI
@@ -11,7 +13,7 @@ st.title("Startup GPT 🚀")
 text = st.text_input("Write the industry for your startup")
 
 #Setup openai
-os.environ["OPENAI_API_KEY"] = openai_api_key
+os.environ["OPENAI_API_KEY"] = Platform.environment['API_KEY']
 
 #setup llm
 llm = OpenAI()
